@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    string name = (string)ViewData["Name"];
+    string company = ViewBag.Company;
+}
+
+<div class="text-center">
+   ViewData : @ViewData["Name"], @ViewData["Company"], @name <br/>
+   ViewBag : @ViewBag.Company, @ViewBag.Name, @company
+</div>
+
+<a asp-action="Data" asp-controller="Account" asp-route-id="1" asp-route-name="Mohan" asp-route-address="Noida">Send Data</a>
